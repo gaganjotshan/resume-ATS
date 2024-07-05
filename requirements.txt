@@ -1,0 +1,23 @@
+streamlit
+matplotlib
+python-dotenv
+Pillow
+pdf2image
+google-generativeai
+pytesseract
+pandas
+plotly 
+seaborn
+nltk
+PyPDF2
+scikit-learn 
+nltk
+
+
+# spaCy model
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz
+
+# Note: Poppler needs to be installed separately on the system.
+# macOS: brew install poppler
+# Ubuntu/Debian: sudo apt-get install poppler-utils
+# Windows: Download from http://blog.alivate.com.au/poppler-windows/ and add to PATH

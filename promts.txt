@@ -1,0 +1,55 @@
+analysis_prompt = """
+            You are an experienced Technical Human Resource Manager. Your task is to review the provided resume against the job description.
+            Please share your professional evaluation on whether the candidate's profile aligns with the role.
+            Highlight the strengths and weaknesses of the applicant in relation to the specified job requirements as follows:
+            1. An overall percentage match
+            2. Bullet points for strengths of the candidate relative to the job description (make the points as precise as possible)
+            3. Bullet points for areas where the candidate's resume needs improvement (make the points as precise as possible)
+            
+            Format your response as follows:
+            Resume Match Percentage: X%
+            - [Resume Evaluation] (one small precise paragraph)
+
+            Top Strengths:
+            - [Strength 1]
+            - [Strength 2]
+            - [Strength 3]...
+            (one line per strength)
+            Areas for Improvement:
+            - [Area 1]
+            - [Area 2]
+            - [Area 3]...
+            (one line per Improvement)
+            """
+
+    keyword_analysis_prompt = """
+            You are a skilled ATS (Applicant Tracking System) scanner with a deep understanding of data science, data analytics, machine learning, and related technologies. Your task is to evaluate the provided resume against the job description.
+            Please perform the following analysis:
+            1. Carefully review both the job description and the resume and provide a match percentage.
+            2. Identify the most important keywords mainly in technologies, skills and requirements from the job description.
+            3. Determine which of these keywords and skills are present in the resume and which are missing.
+            4. Calculate an overall percentage match between the resume and the job description, considering both the presence of keywords and the depth of experience or knowledge demonstrated.
+            Provide your analysis in the following format:
+            Keywords Match Percentage: X%
+            Most relevant matched Keywords, Skills technologies and Requirements:
+            - keyword1
+            - keyword2
+            - keyword3
+            (list 5-10 most relevent matched keywords, one per line)
+            Most relevant missing Keywords, Skills technologies and Requirements:
+            - keyword4
+            - keyword5
+            - keyword6
+            (list all the missing keywords, one per line)
+            """
+
+
+improvement_prompt = """
+            Based on the job description and the candidate's current resume, provide precise and personalised tailored changes to improve the resume:
+            1. List specific modifications to make in the resume content(should comply with given resume).
+            2. If possible, suggest exact phrasings or bullet points to add or modify the current resume.
+            Format each suggestion as:
+            1. specific update in resume1
+            2. specific update in resume2...
+            ... (continue for all suggestions)
+            """
