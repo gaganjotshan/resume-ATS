@@ -14,6 +14,7 @@ load_dotenv()
 
 # Configure Gemini API
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 def get_gemini_response(prompt: str, resume_text: str, job_description: str) -> str:
     """Generate a response using the Gemini model."""
