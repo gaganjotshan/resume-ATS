@@ -1,7 +1,7 @@
-# Resume Application Tracking System (ATS) Expert
+# Resume Application Tracking System (ATS)
 
 ## Overview
-This project is an End-to-End Resume Application Tracking System (ATS) designed to help candidates evaluate their resumes against job descriptions using the Google Gemini Pro Vision AI Model. It automates the resume scoring process to provide candidates with insights into their application's suitability.
+This project is an End-to-End Resume (ATS) Analyzer designed to help candidates evaluate their resumes against job descriptions using the Google Gemini Pro Vision AI Model. It automates the resume scoring process to provide candidates with insights into their application's suitability.
 
 ## Features
 - Upload and analyze PDF resumes

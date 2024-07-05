@@ -97,8 +97,8 @@ def create_keyword_chart(keywords: Dict[str, List[str]]):
     return fig
 
 def main():
-    st.set_page_config(page_title="Resume Tailoring Assistant", layout="wide")
-    st.title("Resume Tailoring Assistant")
+    st.set_page_config(page_title="Resume Analyzer", layout="wide")
+    st.title("Resume Analyzer")
 
     col1, col2 = st.columns(2)
 
