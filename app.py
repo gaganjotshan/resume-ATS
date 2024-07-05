@@ -159,24 +159,24 @@ def main():
 
         if keyword_analysis:
             keyword_analysis_prompt = """
-            You are a skilled ATS (Applicant Tracking System) scanner with a deep understanding of data science, data analytics, machine learning, and other domains as well. Your task is to evaluate the provided resume against the job description.
+            You are a skilled ATS (Applicant Tracking System) scanner with a deep understanding of data science, data analytics, machine learning, related technologies and other domains as well. Your task is to evaluate the provided resume against the job description.
             Please perform the following analysis:
             1. Carefully review both the job description and the resume and provide a match percentage.
-            2. Identify the most important keywords mainly in technologies, skills and requirements from the job description.
+            2. Identify the most important keywords mainly for technologies, skills and requirements from the job description.
             3. Determine which of these keywords and skills are present in the resume and which are missing.
             4. Calculate an overall percentage match between the resume and the job description, considering both the presence of keywords and the depth of experience or knowledge demonstrated.
             Provide your analysis in the following format:
             Keywords Match Percentage: X%
-            Most relevant matched Keywords, Skills technologies and Requirements:
+            Most relevant matched Keywords:
             - keyword1
             - keyword2
             - keyword3
             (list 5-10 most relevent matched keywords, one per line)
-            Most relevant missing Keywords, Skills technologies and Requirements:
+            Most relevant missing Keywords:
             - keyword4
             - keyword5
             - keyword6
-            (list all the missing keywords, one per line)
+            (list all the missing keywords one per line)
             """
             keyword_analysis_response = get_gemini_response(keyword_analysis_prompt, resume_text, job_description)
             
