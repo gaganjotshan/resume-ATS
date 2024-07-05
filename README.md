@@ -19,6 +19,15 @@ This project is an End-to-End Resume (ATS) Analyzer designed to help candidates 
 - **Cloud Services**: Google Cloud Platform (GCP) for API integration
 - **Additional Libraries**: pdf2image, python-dotenv, Pillow
 
+## High-Level Diagram
+[User] --> [Streamlit Frontend]
+[Streamlit Frontend] --> [Python Backend]
+[Python Backend] --> [PDF Processor]
+[Python Backend] --> [Keyword Analyzer]
+[Python Backend] --> [Gemini AI Model]
+[Python Backend] --> [Visualization Engine]
+[Visualization Engine] --> [Streamlit Frontend]
+
 ## Installation
 
 ### Prerequisites
