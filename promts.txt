@@ -40,7 +40,7 @@ analysis_prompt = """
             - keyword4
             - keyword5
             - keyword6
-            (list all the missing keywords, not the sentence or phrases, one per line)
+            (list all the missing keywords one per line)
             """
 
 
